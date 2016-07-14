@@ -160,7 +160,7 @@ bar {
   position top
   mode dock
   workspace_buttons yes
-  font pango: DejaVu Sans Book, FontAwesome 8
+  font pango: DejaVu Sans Book, FontAwesome 11
 
   colors {
     background #181818
