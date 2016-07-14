@@ -176,6 +176,7 @@ bar {
 # exec --no-startup-id feh --bg-scale ~/pictures/wallpapers/arch-linux-wallpaper2.png
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet
+exec --no-startup-id owncloud
 
 focus_follows_mouse no
 for_window [class="^.*"] border pixel 1
