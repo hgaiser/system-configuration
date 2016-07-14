@@ -71,14 +71,12 @@ bindsym $mod+a focus parent
 # Define workspaces
 set $ws1 "dev"
 set $ws2 "web"
-set $ws3 "chat"
-set $ws4 "mail"
-set $ws5 "audio"
-set $ws6 "video"
-set $ws7 "kodi"
-set $ws8 "doc"
-set $ws9 "term"
-set $ws0 "other"
+set $ws3 "mail"
+set $ws4 "chat"
+set $ws5 "doc"
+set $ws6 "audio"
+set $ws7 "video"
+set $ws8 "other"
 
 # Change keyboard layout
 set $keyboard_layout "keyboard: r=ro, u=us"
@@ -99,8 +97,6 @@ bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws0
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -111,8 +107,6 @@ bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws0
 
 bindsym $mod+Control+Left move workspace to output left
 bindsym $mod+Control+Up move workspace to output up
@@ -120,18 +114,13 @@ bindsym $mod+Control+Down move workspace to output down
 bindsym $mod+Control+Right move workspace to output right
 
 # Move application to workspace
-assign [class="Skype"] $ws3
 assign [class="google-chrome"] $ws2
-assign [class="chromium"] $ws2
-assign [class="Opera"] $ws2
-assign [class="Gvim"] $ws1
-assign [class="Thunderbird"] $ws4
-assign [class="Spotify"] $ws5
-assign [class="Thunar"] $ws0
-assign [class="Tvmaxe"] $ws6
+assign [class="Thunderbird"] $ws3
+assign [class="Spotify"] $ws6
 assign [class="Kodi"] $ws7
-assign [class="Vlc"] $ws6
-assign [class="libreoffice"] $ws8
+assign [class="Vlc"] $ws7
+assign [class="libreoffice"] $ws5
+assign [class="telegram-desktop"] $ws4
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
