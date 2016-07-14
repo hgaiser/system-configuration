@@ -61,14 +61,6 @@ TEXT
     "color": ${if_match ${acpitemp} < 60}"\#a0a0a0"${else}"\#ffb038"${endif}
   },
   {
-    "full_text": "  Haga: ${execi 300 ~/scripts/weather "EUR|NL|NL|THE-HAGUE"}",
-    "color": "\#a0a0a0"
-  },
-  {
-    "full_text": "  București: ${execi 300 ~/scripts/weather "EUR|RO|RO|BUCHAREST"}",
-    "color": "\#a0a0a0"
-  },
-  {
     "full_text": "  ${time %a %d/%m %R}",
     "color": "\#a0a0a0"
   }
