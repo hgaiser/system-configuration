@@ -29,24 +29,24 @@ TEXT
   },
 
   {
-    "full_text": ${if_match ${battery_percent BAT0} > 90}
-                   "  ${battery_percent BAT0}% "
+    "full_text": ${if_match ${battery_percent BAT1} > 90}
+                   "  ${battery_percent BAT1}% "
                  ${else}
-                   ${if_match ${battery_percent BAT0} > 60}
-                     "  ${battery_percent BAT0}% "
+                   ${if_match ${battery_percent BAT1} > 60}
+                     "  ${battery_percent BAT1}% "
                    ${else}
-                     ${if_match ${battery_percent BAT0} > 40}
-                       "  ${battery_percent BAT0}% "
+                     ${if_match ${battery_percent BAT1} > 40}
+                       "  ${battery_percent BAT1}% "
                      ${else}
-                       ${if_match ${battery_percent BAT0} > 10}
-                         "  ${battery_percent BAT0}% "
+                       ${if_match ${battery_percent BAT1} > 10}
+                         "  ${battery_percent BAT1}% "
                        ${else}
-                         "  ${battery_percent BAT0}% "
+                         "  ${battery_percent BAT1}% "
                        ${endif}
                      ${endif}
                    ${endif}
                  ${endif},
-    "color": ${if_match ${battery_percent BAT0} > 25}"\#ffb038"${else}"\#da210c"${endif}
+    "color": ${if_match ${battery_percent BAT1} > 25}"\#ffb038"${else}"\#da210c"${endif}
   },
   {
     "full_text": "  ${cpu}% ",
